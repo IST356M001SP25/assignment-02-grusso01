@@ -1,7 +1,7 @@
 # Reflection
 
-Student Name:  name
-Sudent Email:  email
+Student Name:  Gabrielle Russo
+Sudent Email:  grusso01@syr.edu
 
 ## Instructions
 
@@ -22,4 +22,4 @@ Examples:
 **Best Reflection** "I learned when to use while vs for loops. While loops are for sentiel-controlled values (waiting for a condition to occur), vs for loops are for iterating over collections of fixed values."
 
 `--- Reflection Below This Line ---`
-
+This assignment helped me reinforce my understanding of dictionaries, particularly in writing and utilizing them effectively. Additionally, it allowed me to refresh my skills in file parsing, specifically extracting and processing data efficiently.
