@@ -20,15 +20,15 @@ def parse_packaging(packaging_data: str) -> list[dict]:
     '''
     package = []
     for data in packaging_data.split('/'):
-        unit = data.split(" in ")[0]
-        quantity = int(unit.split()[0])
-        unit = unit.split()[1].strip()
+        unit_data = data.split(" in ")
+        quantity = int(unit_data[0].split()[0])
+        unit = unit_data[0].split()[1].strip()
         package.append({unit: quantity})
 
-    unit = data.split(" in")[-1]
-    quantity = int(unit.split()[0])
-    unit = unit.split()[1].strip()
-    package.append({unit: quantity})
+        if len(unit_data) > 1:
+            quantity = int(unit_data[1].split()[0])
+            unit = unit_data[1].split()[1].strip()
+            package.append({unit: quantity})
 
     return package
 
